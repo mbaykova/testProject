@@ -33,7 +33,7 @@ public class CycleExample {
         int k = 6;
         while (k > 0){
             System.out.println(j);
-            j--;
+            k--;
         }
 
 
