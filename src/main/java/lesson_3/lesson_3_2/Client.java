@@ -10,6 +10,7 @@ public class Client extends Person {
         this.bank = company;
     }
 
+
     public void display(){
         System.out.printf("Client Name: %s \t Bank: %s \n", super.getName(), bank);
     }

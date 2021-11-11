@@ -24,9 +24,18 @@ public class Employee extends Person{
     }
 
 
+    @Override
+    public void displayName() {
+        super.displayName();
+        System.out.println("Employee name = " + getName() + "company = "+ company);
+    }
+
     public static void main(String[] args) {
         Employee sam = new Employee("Sam", 25,"Microsoft");
         sam.displayName();  // Sam
         sam.work();     // Sam works in Microsoft
+
     }
+
+
 }

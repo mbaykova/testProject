@@ -8,7 +8,7 @@ package lesson_3.lesson_3_3;
  Если класс не реализует какие-то методы интерфейса, то такой класс должен быть определен как абстрактный,
   а его неабстрактные классы-наследники затем должны будут реализовать эти методы.
  */
-public class Book implements Printable {
+public class Book implements Printable, Writable {
     String name;
     String author;
 
@@ -16,6 +16,17 @@ public class Book implements Printable {
         this.name = name;
         this.author = author;
     }
+
+//    @Override
+//    public void print() {
+//
+//    }
+
+    @Override
+    public void write() {
+
+    }
+
 
     public void print() {
         System.out.printf("%s (%s) \n", name, author);

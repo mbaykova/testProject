@@ -7,18 +7,19 @@ public class Person {
 
 
     public Person(String name, int age){
+        System.out.println("вызов конструктора родителя");
         this.name = name;
         this.age = age;
     }
 
-    public String getName() {
+    protected String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
-    
+
     public void setAge(int age) {
         if (age < 0){
            System.out.println("Возраст должен быть больше 0");
@@ -29,7 +30,7 @@ public class Person {
     public void displayName(){
         System.out.printf("Name: %s \n", name);
     }
-    void displayAge(){
+    protected void displayAge(){
         System.out.printf("Age: %d \n", age);
     }
 
@@ -42,4 +43,11 @@ public class Person {
         return this.name.equals(p.name) && (this.age == ((Person) obj).age);
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
