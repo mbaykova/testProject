@@ -35,9 +35,9 @@ public class Bus {
         System.out.println("Выходит пассажир: " + person.getFullName());
         if (countPassengers!=0){
             for (int i = 0; i <passengers.length; i++){
-                if (passengers[i].getFullName().equals(person.getFullName())
+                if (passengers[i]!= null && passengers[i].getFullName().equals(person.getFullName())
                         && passengers[i].getAge() == passengers[i].getAge()){
-                    passengers[countPassengers] = null;
+                    passengers[i] = null;
                     countPassengers--;
                     return;
                 }
