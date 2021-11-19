@@ -14,25 +14,25 @@ public class MapExample {
         passportsAndNames.put(162348, "Виктор Михайлович Стычкин");//повторный ключ
         System.out.println(passportsAndNames);
 
-//        //Получение и удаление элементов возможно только по ключу
-//        // Номерных индексов, как в массивах или списках, в HashMap нет
-//        // — доступ к значению осуществляется по ключу.
-//        String lidiaName = passportsAndNames.get(212133);
-//        System.out.println(lidiaName);
-//
-//        passportsAndNames.remove(162348);
-//        System.out.println(passportsAndNames);
-//
-//        //Проверка наличия ключа и значения
-//        System.out.println(passportsAndNames.containsKey(11111));
-//        System.out.println(passportsAndNames.containsValue("Дональд Джон"));
-//
+        //Получение и удаление элементов возможно только по ключу
+        // Номерных индексов, как в массивах или списках, в HashMap нет
+        // — доступ к значению осуществляется по ключу.
+        String lidiaName = passportsAndNames.get(212133);
+        System.out.println(lidiaName);
+
+        passportsAndNames.remove(162348);
+        System.out.println(passportsAndNames);
+
+        //Проверка наличия ключа и значения
+        System.out.println(passportsAndNames.containsKey(11111));
+        System.out.println(passportsAndNames.containsValue("Дональд Джон"));
+
         //Получения списка всех ключей и значений
         Set<Integer> keys = passportsAndNames.keySet();
         System.out.println("Ключи: " + keys);
-//
-//        ArrayList<String> values = new ArrayList<>(passportsAndNames.values());
-//        System.out.println("Значения: " + values);
+
+        ArrayList<String> values = new ArrayList<>(passportsAndNames.values());
+        System.out.println("Значения: " + values);
 
         //Объединение двух map в одну
         HashMap<Integer, String> passportsAndNames2 = new HashMap<>();

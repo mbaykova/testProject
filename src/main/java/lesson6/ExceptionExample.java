@@ -22,20 +22,17 @@ public class ExceptionExample {
         }finally {
             System.out.println("выполняется всегда!");
         }
-//        System.out.println("Продолжаем выполнение");
-
-//        int num[] = {1, 2, 3, 4};
-//        try {
-//            System.out.println(num[5]);
-//        }catch (ArrayIndexOutOfBoundsException e){
-//            System.out.println("Выход за границу массива");
-//        }catch (NullPointerException e){
-//            System.out.println("Выход за границу массива");
-//        }
-
-
-
         System.out.println("Продолжаем выполнение");
+
+        int num[] = {1, 2, 3, 4};
+        try {
+            System.out.println(num[5]);
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Выход за границу массива");
+        }
+
+
+
         try {
             throw new MyException();
         } catch (MyException e) {
